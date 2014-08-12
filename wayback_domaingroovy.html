@@ -1,0 +1,1718 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script type="text/javascript" src="/static/js/analytics.js" ></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta property="fb:admins" content="29704462" />
+  <title>Find A Domain Name - DomainGroovy</title>
+  <link href="/web/20120831120210cs_/http://domaingroovy.com/media/stylesheets/screen.css?1234567890" media="screen, projection" rel="stylesheet" type="text/css"></link>
+  <link href="/web/20120831120210cs_/http://domaingroovy.com/media/stylesheets/jquery-ui-1.8.10.custom.css" media="screen, projection" rel="stylesheet" type="text/css"></link>
+  <script type="text/javascript">
+    var tumblr_link_url = "/web/20120831120210/http://domaingroovy.com";
+    var tumblr_link_name = "DomainGroovy";
+    var tumblr_link_description = "Find the perfect domain name using the tools at DomainGroovy";
+  </script>
+</head>
+<body>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app18.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1420070399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/domaingroovy.com\/";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 475;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "31";
+var displayMonth = "Aug";
+var displayYear = "2012";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" lang="en" class="__wb_banner_div" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px">
+
+
+<div id="wm-ipp-inside" class="__wb_banner_div" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://domaingroovy.com/" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20120831120210" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;width: inherit !important" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20120731015719/http://domaingroovy.com/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="31 Jul 2012"><strong>JUL</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 12:02:10 Aug 31, 2012">AUG</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20121001125857/http://domaingroovy.com/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="1 Oct 2012"><strong>OCT</strong></a>
+		                
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20120823072016/http://domaingroovy.com/" title="7:20:16 Aug 23, 2012" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 12:02:10 Aug 31, 2012">31</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20120908025721/http://domaingroovy.com/" title="2:57:21 Sep 8, 2012" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20110814212053/http://domaingroovy.com/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="14 Aug 2011"><strong>2011</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 12:02:10 Aug 31, 2012">2012</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20131004121203/http://domaingroovy.com/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="4 Oct 2013"><strong>2013</strong></a>
+		                
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/web/20120831120210*/http://domaingroovy.com/" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>113 captures</strong></a>
+           <div class="__wb_banner_div" style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">22 Feb 10 - 31 Dec 13</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:475px;height:27px;" href="" id="wm-graph-anchor">
+       <div class="__wb_banner_div" id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:475px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="475"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=475_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:011000000000_2011:-1:010002432643_2012:7:33435424a901_2013:-1:216a66030211_2014:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+<div id="container">
+    <div id="header">
+        <a href="/web/20120831120210/http://domaingroovy.com/" alt="DomainGroovy Home"><img alt="DomainGroovy Home" src="/web/20120831120210im_/http://domaingroovy.com/media/images/logo.png" /></a>
+        <div id="slogan">
+            
+                <span class="button twitter"><a href="/web/20120831120210/http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="domaingroovy" data-related="bradjasper:Owner of DomainGroovy"></a></span>
+                <span class="button tubmlr"><span id="tumblr_button_abc123"></span></span>
+                <span class="button facebook"><iframe src="/web/20120831120210if_/http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fdomaingroovy.com&send=false&layout=button_count&width=80&show_faces=false&action=like&colorscheme=light&font&height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true"></iframe></span>
+                <div class="clear"></div>
+            
+        </div>
+    </div>
+
+    <div id="content">
+        
+    <script type="text/javascript">
+        function foreach(obj, callback) {
+            if (obj instanceof Array) {
+                for (var i in obj) {
+                    callback(obj[i]);
+                }
+            } else {
+                for (var item in obj) {
+                    callback(item);
+                }
+            }
+        }
+
+        function getElementsByClass(searchClass,node,tag) {
+            var classElements = new Array();
+            if ( node == null )
+                node = document;
+            if ( tag == null )
+                tag = '*';
+            var els = node.getElementsByTagName(tag);
+            var elsLen = els.length;
+            var pattern = new RegExp("(^|\\s)"+searchClass+"(\\s|$)");
+            for (i = 0, j = 0; i < elsLen; i++) {
+                if ( pattern.test(els[i].className) ) {
+                    classElements[j] = els[i];
+                    j++;
+                }
+            }
+            return classElements;
+        }
+                
+        function show_more(name) {
+            var section = document.getElementById("#"+name);
+            if (section) {
+                var hidden = getElementsByClass("hide", section);
+                foreach(hidden, function(row) {
+                    row.style.display = "block";
+                });
+                foreach(getElementsByClass("button", section), function(elmt) {
+                    elmt.style.display = "none";
+                });
+            }
+        }
+    </script>
+
+    <p id="intro"><span class="hilight">Finding a good domain name is <em>hard</em>.</span> DomainGroovy is here to help.
+    Below are websites to help you in your quest for the perfect domain. Dozens of websites organized and rated for your
+    convenience.</p>
+
+    <div id="categories">
+        <ul id="cats">
+            
+                <li>
+                    <a href="/web/20120831120210/http://domaingroovy.com/#best-of">Best Of</a>
+                </li>
+            
+                <li>
+                    <a href="/web/20120831120210/http://domaingroovy.com/#generate-it">Generate It</a>
+                </li>
+            
+                <li>
+                    <a href="/web/20120831120210/http://domaingroovy.com/#keyword-list">Keyword List</a>
+                </li>
+            
+                <li>
+                    <a href="/web/20120831120210/http://domaingroovy.com/#available-expired">Available &amp; Expired</a>
+                </li>
+            
+                <li>
+                    <a href="/web/20120831120210/http://domaingroovy.com/#type-it">Type It</a>
+                </li>
+            
+                <li>
+                    <a href="/web/20120831120210/http://domaingroovy.com/#auction-paid">Auction &amp; Paid</a>
+                </li>
+            
+                <li>
+                    <a href="/web/20120831120210/http://domaingroovy.com/#research">Research</a>
+                </li>
+            
+                <li>
+                    <a href="/web/20120831120210/http://domaingroovy.com/#forums">Forums</a>
+                </li>
+            
+                <li>
+                    <a href="/web/20120831120210/http://domaingroovy.com/#brand-name-generators">Brand Name Generators</a>
+                </li>
+            
+                <li>
+                    <a href="/web/20120831120210/http://domaingroovy.com/#mobile">Mobile</a>
+                </li>
+            
+                <li class="end">
+                    <a href="/web/20120831120210/http://domaingroovy.com/#other">Other</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    
+        <a name="best-of"></a>
+        <div class="category" id="best-of">
+            <div class="category_header">
+                <div class="left"></div>
+                <div class="right"></div>
+                
+                    <h1>Best Of <span>The best tools from each category to find the perfect domain name</span></h1>
+                
+            </div>
+
+            <div class="section">
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://domaingroovy.com/keyword_tool/">Domain Name Search</a>
+                            <br /><span class="description">DomainGroovy&#39;s first domain tool. Search for your domain name using the most popular keywords.</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://wordoid.com/">Wordoid</a>
+                            <br /><span class="description">Create made up words that look nice and feel great. Generate random names or enter a keyword to use as the root</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.nxdom.com/">NXdom</a>
+                            <br /><span class="description">Quickly search and sort a large database of available domain names</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.leandomainsearch.com/">Lean Domain Search</a>
+                            <br /><span class="description">Search for hundreds of keywords related to any word you choose</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.bustaname.com/">BustAName</a>
+                            <br /><span class="description">Quickly search for available domain names by combining keyword synonyms and prefixes</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.namestation.com/">NameStation</a>
+                            <br /><span class="description">Generate random names with and without a root keyword. Control language, length, extension and more</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.domainhole.com/">DomainHole</a>
+                            <br /><span class="description">Domain site with various tools, including name spinner, expired domains and name generator.</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+            </div>
+        </div>
+        
+            <div id="newsletter">
+                <script type="text/javascript">var host = (("https:" == document.location.protocol) ? "/web/20120831120210/https://secure." : "http://");document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));</script>
+
+                <script type="text/javascript">
+                    var m7x4a3 = new WufooForm();
+                    m7x4a3.initialize({
+                        'userName':'bradjasper', 
+                        'formHash':'m7x4a3', 
+                        'autoResize':true,
+                        'height':'260'});
+                    m7x4a3.display();
+                </script>
+            </div>
+            <div class="clear"></div>
+        
+
+        
+
+        
+
+        
+    
+        <a name="generate-it"></a>
+        <div class="category" id="generate-it">
+            <div class="category_header header_alt">
+                <div class="left"></div>
+                <div class="right"></div>
+                
+                    <h2>Generate It <span>Generate a domain name through synonyms, random words or some other mechanism</span></h2>
+                
+            </div>
+
+            <div class="section">
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://wordoid.com/">Wordoid</a>
+                            <br /><span class="description">Create made up words that look nice and feel great. Generate random names or enter a keyword to use as the root</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.bustaname.com/">BustAName</a>
+                            <br /><span class="description">Quickly search for available domain names by combining keyword synonyms and prefixes</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.namestation.com/">NameStation</a>
+                            <br /><span class="description">Generate random names with and without a root keyword. Control language, length, extension and more</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.panabee.com/">Panabee</a>
+                            <br /><span class="description">Search and brainstorm for domain names. Show translations, related terms and availability for dozens of tlds (including .com, .io, .me, .ly, .it and more)</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://domaintyper.com/">DomainTyper</a>
+                            <br /><span class="description">Quickly search the availability of a .com, .net or .org domain name or generate random domain names</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://nameninja.com/">NameNinja</a>
+                            <br /><span class="description">Quickly search for domains containing popular search terms. Perfect for finding your next keyword rich domain.</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.domainhole.com/">DomainHole</a>
+                            <br /><span class="description">Domain site with various tools, including name spinner, expired domains and name generator.</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            <span class="new">new</span>
+                            <a href="/web/20120831120210/http://www.namestall.com/">Name Stall</a>
+                            <br /><span class="description">A collection of tools to help find a domain name</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars four"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.rewordio.us/">Rewordious</a>
+                            <br /><span class="description">Search for available .com domain names using keywords and synonyms</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars three"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://jabberwordy.com/">JabberWordy</a>
+                            <br /><span class="description">Show the .com, .net or .org availability for 10 randomly generated domain names</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars three"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://domainwhiz.net/">DomainWhiz</a>
+                            <br /><span class="description">Find available .com, .net and .org domains by combining synonyms</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars three"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.domain-generator.net/">Domain Generator</a>
+                            <br /><span class="description">Generate random domain names for popular domain extensions</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars three"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.dotcomroulette.com/">Dot Com Roulette</a>
+                            <br /><span class="description">Enter a few keywords to receive a list of related available domain names.</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars two"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.who.is/domain-suggestions/">Who.is</a>
+                            <br /><span class="description">Find available .com and .net domain names by using synonyms for keywords you enter</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars two"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://domain-generator.us/">Domain-Generator.us</a>
+                            <br /><span class="description">Search dozens of popular domain extensions using synonyms related to your keywords</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars two"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.surf7.net/services/value-added-services/free-web-tools/web-20-name-generator/">Surf7</a>
+                            <br /><span class="description">Generate a Web 2.0 Name like 56desks.com or nula.com and check for availability</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars two"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.company-name-generator.com/">Company Name Generator</a>
+                            <br /><span class="description">Check domain availability for random company names</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars two"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.dotomator.com/web20.html">Web 2.0 Name Generator (Dot-o-mator)</a>
+                            <br /><span class="description">Generate a Web 2.0 name and search for it&#39;s availability with one click</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars one"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.domainnametool.com/">Domain Name Tool</a>
+                            <br /><span class="description">Search for meaningful domain names using synonyms related to a keyword</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+            </div>
+        </div>
+        
+
+        
+          <script type="text/javascript"><!--
+          google_ad_client = "ca-pub-1724976744414236";
+          /* DomainGroovy Homepage Ad */
+          google_ad_slot = "8043385185";
+          google_ad_width = 468;
+          google_ad_height = 60;
+          //-->
+          </script>
+          <script type="text/javascript"
+          src="/web/20120831120210js_/http://pagead2.googlesyndication.com/pagead/show_ads.js">
+          </script>
+        
+
+        
+
+        
+    
+        <a name="keyword-list"></a>
+        <div class="category" id="keyword-list">
+            <div class="category_header">
+                <div class="left"></div>
+                <div class="right"></div>
+                
+                    <h2>Keyword List <span>Create domains from root word and keyword lists (prefixes, common words, web 2.0, etc...)</span></h2>
+                
+            </div>
+
+            <div class="section">
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://domaingroovy.com/domainfinder/">Domain Finder Mobile App</a>
+                            <br /><span class="description">DomainFinder is a mobile application for iPhone and iPod that makes finding a domain easy.</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://domaingroovy.com/keyword_tool/">Domain Name Search</a>
+                            <br /><span class="description">DomainGroovy&#39;s first domain tool. Search for your domain name using the most popular keywords.</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.leandomainsearch.com/">Lean Domain Search</a>
+                            <br /><span class="description">Search for hundreds of keywords related to any word you choose</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://impossibility.org/">Impossibility</a>
+                            <br /><span class="description">Generate available domain using your keyword plus adjectives, nouns, verbs and more </span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.domainexposer.com/">Domain Exposer</a>
+                            <br /><span class="description">Find a domain name with a root keyword. Search many different keyword lists like adjectives and common words</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            <span class="new">new</span>
+                            <a href="/web/20120831120210/http://domain-o-matic.com/">Domain-O-Matic</a>
+                            <br /><span class="description">Tool to find available domain names based on pre-selected keyword lists and keywords you specify.</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars four"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://nameboy.com/">Nameboy</a>
+                            <br /><span class="description">Search for available domain names with a primary and secondary keyword using keyword lists and synonyms</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars four"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.domainsbot.com/">DomainsBot</a>
+                            <br /><span class="description">Look for domain names with using your keyword and other synonyms</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars four"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.shoutdomains.com/">Shout Domains</a>
+                            <br /><span class="description">Search available .com, .net and .org domain names with a keyword and other popular prefixes, adjectives and more</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars four"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.domainfellow.com/">Domain Fellow</a>
+                            <br /><span class="description">Check for available domain names with your keyword by searching popular keyword list by category</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars three"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.snapitnow.com/">SnapItNow</a>
+                            <br /><span class="description">Combine your keyword with other common words to find domain names available to register</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars two"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://domain-suggestions.domaintools.com/">Domain Suggestions (DomainTools)</a>
+                            <br /><span class="description">Search for available domain names using popular synonyms and keyword lists</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars two"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.randomainer.com/">Randomainer</a>
+                            <br /><span class="description">Find available domain names based on common words</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars one"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://suggest.name/">SuggestName</a>
+                            <br /><span class="description">Find domains by combining prefixes and suffixes using popular words</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars one"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.dotomator.com/">Dot-o-mator</a>
+                            <br /><span class="description">Combine different keywords lists using popular common words to find available domain names</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+            </div>
+        </div>
+        
+
+        
+
+        
+
+        
+    
+        <a name="available-expired"></a>
+        <div class="category" id="available-expired">
+            <div class="category_header header_alt">
+                <div class="left"></div>
+                <div class="right"></div>
+                
+                    <h2>Available &amp; Expired <span>Search available, expiring soon or expired domain names</span></h2>
+                
+            </div>
+
+            <div class="section">
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.nxdom.com/">NXdom</a>
+                            <br /><span class="description">Quickly search and sort a large database of available domain names</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.123finder.com/">123Finder</a>
+                            <br /><span class="description">Search available domain names with a keyword and advanced search options</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.domainhole.com/">DomainHole</a>
+                            <br /><span class="description">Domain site with various tools, including name spinner, expired domains and name generator.</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.scoratic.com/">Scoratic</a>
+                            <br /><span class="description">Browse recently expired dictionary domain names sorted by score</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.expireddomains.net/backorder-expired-domains/">Expired Domains</a>
+                            <br /><span class="description">Quickly search and filter pending or expired domain names. Automatically updated every day, with domain vital statistics like Pagerank, back links and Alexa rank.</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://three.io/">three.io</a>
+                            <br /><span class="description">Browse available three letter .io domain names, like cow.io, fur.io and hat.io</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars four"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://savespell.com/browse/available">SaveSpell</a>
+                            <br /><span class="description">Search or browse available and expired domain names. Also filter by language and extension</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars four"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.1search.org/">1 Search</a>
+                            <br /><span class="description">Daily expire domain lists, sorted by words and length</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars four"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://expiring-domainnames.com/">Expiring Domain Names</a>
+                            <br /><span class="description">Search and filter expired domain names by length and more</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars three"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.dropwatch.com/expireddomains/index.html">DropWatch</a>
+                            <br /><span class="description">Browse expired domains by date</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars three"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.stuckdomains.com/">StuckDomains</a>
+                            <br /><span class="description">Search and filter millions of expired domain names by keyword</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars three"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://hotnamelist.com/">HotNameList</a>
+                            <br /><span class="description">Search and browse thousands of available .com domain names based on popular topical and common words</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars three"></div>
+                        
+                        <div class="info">
+                            <span class="new">new</span>
+                            <a href="/web/20120831120210/http://genericdomainfinder.com/droppeddomains">Generic Domain Finder</a>
+                            <br /><span class="description">Find available domain names that have expired and are ready to purchase at the normal registration cost</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars three"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.domainnamesoup.com/">Domain Name Soup</a>
+                            <br /><span class="description">Find available, expired and expiring soon domain names</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars two"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://availabledomainnames.com/category/available-domain-names/">Available Domain Names</a>
+                            <br /><span class="description">Blog showcasing thousands of popular available domain names</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars one"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://justdropped.com/">JustDropped</a>
+                            <br /><span class="description">Search recently expired domain names by keyword and length. Requires free registration</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+            </div>
+        </div>
+        
+
+        
+
+        
+          <script type="text/javascript"><!--
+          google_ad_client = "ca-pub-1724976744414236";
+          /* DomainGroovy Homepage Ad */
+          google_ad_slot = "8043385185";
+          google_ad_width = 468;
+          google_ad_height = 60;
+          //-->
+          </script>
+          <script type="text/javascript"
+          src="/web/20120831120210js_/http://pagead2.googlesyndication.com/pagead/show_ads.js">
+          </script>
+        
+
+        
+    
+        <a name="type-it"></a>
+        <div class="category" id="type-it">
+            <div class="category_header">
+                <div class="left"></div>
+                <div class="right"></div>
+                
+                    <h2>Type It <span>Manually type your domain name and search multiple extensions at once</span></h2>
+                
+            </div>
+
+            <div class="section">
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://domaintyper.com/">DomainTyper</a>
+                            <br /><span class="description">Quickly search the availability of a .com, .net or .org domain name or generate random domain names</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://domai.nr/">Domainr</a>
+                            <br /><span class="description">Domainr helps you explore domains with unique endings like blo.gs, chi.mp and del.icio.us</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars four"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/https://domize.com/">Domize</a>
+                            <br /><span class="description">Quickly search for available .com, .net or .org domain names as you type</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars four"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.eurodns.com/">EuroDNS</a>
+                            <br /><span class="description">Search hundreds of popular European domain name extensions like .eu, .de and .it</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars four"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.domjax.com/">DomJax</a>
+                            <br /><span class="description">Search for availability of major domain name extensions like .com, .net and .org with quick access to SEO tools like Google PageRank and pages indexed</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars four"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.namecheap.com/">Namecheap</a>
+                            <br /><span class="description">Quality domain name registrar without overwhelming checkout process</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars four"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.dynadot.com/domain/bulk.html">Dynadot</a>
+                            <br /><span class="description">Perform a bulk domain name search and on many keywords and many extensions</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars three"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.pcnames.com/">PCNames</a>
+                            <br /><span class="description">Quickly search for availability of popular domain extensions like .com, .info, .biz and more</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars three"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://instantdomainsearch.com/">Instant Domain Search</a>
+                            <br /><span class="description">Fast domain name availability for .com, .net and .org</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars two"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.domainbot.ca/">DomainBot.ca</a>
+                            <br /><span class="description">Quickly search for available Canadian domain names</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars two"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://iwantmyname.com/">iWantMyName</a>
+                            <br /><span class="description">Search hundreds of TLDs for your domain name</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars two"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.name.com/">Name.com</a>
+                            <br /><span class="description">Search over 35 tlds (.com, .me, .asia, etc..) at one time for domain availability</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars two"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.domaintools.com/bulk-check/">DomainTools</a>
+                            <br /><span class="description">Bulk domain search with most popular extensions</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars two"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.thedomainsearch.com/">The Domain Search</a>
+                            <br /><span class="description">Quickly search 10 different TLDs for availability (including .com .net .org .mobi .info .in .name .biz .uk and .uk)</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+            </div>
+        </div>
+        
+
+        
+
+        
+
+        
+    
+        <a name="auction-paid"></a>
+        <div class="category" id="auction-paid">
+            <div class="category_header header_alt">
+                <div class="left"></div>
+                <div class="right"></div>
+                
+                    <h2>Auction &amp; Paid <span>Find registered domain names that are listed for sale at a fixed price or auction</span></h2>
+                
+            </div>
+
+            <div class="section">
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.brandbucket.com/">BrandBucket</a>
+                            <br /><span class="description">Business names and brandable domain names for sale.</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://upname.com/">UpName</a>
+                            <br /><span class="description">Search sources like Afternic, GoDaddy and Sedo for paid domain names</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://sedo.com/">Sedo</a>
+                            <br /><span class="description">One of the oldest and most popular domain name marketplaces</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://auctions.godaddy.com/">GoDaddy Auctions</a>
+                            <br /><span class="description">Search lots of quality domain names for sale by domain sellers</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars four"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.afternic.com/">Afternic</a>
+                            <br /><span class="description">Many paid domain names available through search and categories</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars three"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.snapnames.com/">SnapNames</a>
+                            <br /><span class="description">Many domains listed with a minimum bid price</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        div class="stars two"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.namejet.com/Pages/Auctions/BrowseDomains.aspx">NameJet</a>
+                            <br /><span class="description">Search or browse many quality domain name auctions</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars two"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://flippa.com/buy/domains">Flippa</a>
+                            <br /><span class="description">Find domains by filtering active domain name auctions </span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars one"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://services.shop.ebay.com/com-/11153/i.html?_dmd=1">eBay</a>
+                            <br /><span class="description">Search eBay for live domain auctions</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars one"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.pickydomains.com/">PickyDomains</a>
+                            <br /><span class="description">Pay $50 for somebody else to find you a good domain name based on specifications you set</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+            </div>
+        </div>
+        
+
+        
+
+        
+
+        
+          <script type="text/javascript"><!--
+          google_ad_client = "ca-pub-1724976744414236";
+          /* DomainGroovy Homepage Ad */
+          google_ad_slot = "8043385185";
+          google_ad_width = 468;
+          google_ad_height = 60;
+          //-->
+          </script>
+          <script type="text/javascript"
+          src="/web/20120831120210js_/http://pagead2.googlesyndication.com/pagead/show_ads.js">
+          </script>
+        
+    
+        <a name="research"></a>
+        <div class="category" id="research">
+            <div class="category_header">
+                <div class="left"></div>
+                <div class="right"></div>
+                
+                    <h2>Research <span>Keyword research tools</span></h2>
+                
+            </div>
+
+            <div class="section">
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://tailwords.com/">TailWords</a>
+                            <br /><span class="description">Research search term keywords, including total search volume, number of results, AdWords pricing/volume and much more</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+            </div>
+        </div>
+        
+
+        
+
+        
+
+        
+    
+        <a name="forums"></a>
+        <div class="category" id="forums">
+            <div class="category_header header_alt">
+                <div class="left"></div>
+                <div class="right"></div>
+                
+                    <h2>Forums <span>Domain name forums where you can buy and sell domain names</span></h2>
+                
+            </div>
+
+            <div class="section">
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.namepros.com/">NamePros</a>
+                            <br /><span class="description">Large domain name community with active marketplace</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars four"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.dnforum.com/">DNForum</a>
+                            <br /><span class="description">One of the oldest domain communities with free and paid membership</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars three"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.webhostingtalk.com/forumdisplay.php?f=55">WebHostingTalk</a>
+                            <br /><span class="description">Large community of web hosts with active domain name forum</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars three"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.v7n.com/forums/domains/">V7N</a>
+                            <br /><span class="description">Webmaster community with large marketplace, including domain name buying and selling</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars two"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.webmaster-talk.com/marketplace/viewcategory.php?id=7">Webmaster Talk</a>
+                            <br /><span class="description">Webmaster community with active domain name auctions</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+            </div>
+        </div>
+        
+
+        
+
+        
+
+        
+    
+        <a name="brand-name-generators"></a>
+        <div class="category" id="brand-name-generators">
+            <div class="category_header">
+                <div class="left"></div>
+                <div class="right"></div>
+                
+                    <h2>Brand Name Generators <span>Generate a brand name for your business (most without availability check)</span></h2>
+                
+            </div>
+
+            <div class="section">
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://namechk.com/">Namechk</a>
+                            <br /><span class="description">Check to see if your desired username is available at dozens of popular social networking and social bookmarking websites</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            <span class="new">new</span>
+                            <a href="/web/20120831120210/http://namevine.com/">Namevine</a>
+                            <br /><span class="description">Instantly search for a domain and popular social media profiles</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars three"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.jaredlunde.com/brandstack-name-generator">Brand Name Generator 5000</a>
+                            <br /><span class="description">Generate unique brand names without checking for domain availability</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars two"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.surf7.net/services/value-added-services/free-web-tools/web-20-name-generator/">Surf7</a>
+                            <br /><span class="description">Generate a Web 2.0 Name like 56desks.com or nula.com and check for availability</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars two"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://noscope.com/journal/2004/05/random-domain-name-generator">Noscope</a>
+                            <br /><span class="description">Generate 5 brand names at a time, doesn&#39;t check for availability</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars two"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.hackslash.net/?page_id=48">hack/</a>
+                            <br /><span class="description">Generate lists of Web 2.0 brand names for your company without checking for availability</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars two"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.dotomator.com/web20.html">Web 2.0 Name Generator (Dot-o-mator)</a>
+                            <br /><span class="description">Generate a Web 2.0 name and search for it&#39;s availability with one click</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars two"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://noemata.net/nbng/">NOEMATA</a>
+                            <br /><span class="description">Create random unique names</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+            </div>
+        </div>
+        
+
+        
+
+        
+
+        
+    
+        <a name="mobile"></a>
+        <div class="category" id="mobile">
+            <div class="category_header header_alt">
+                <div class="left"></div>
+                <div class="right"></div>
+                
+                    <h2>Mobile <span>Mobile applications to help find domain names</span></h2>
+                
+            </div>
+
+            <div class="section">
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://domaingroovy.com/domainfinder/">Domain Finder Mobile App</a>
+                            <br /><span class="description">DomainFinder is a mobile application for iPhone and iPod that makes finding a domain easy.</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+            </div>
+        </div>
+        
+
+        
+
+        
+
+        
+    
+        <a name="other"></a>
+        <div class="category" id="other">
+            <div class="category_header">
+                <div class="left"></div>
+                <div class="right"></div>
+                
+                    <h2>Other <span>Other tools and resources for finding domain names (brainstorming, synonyms, etc..)</span></h2>
+                
+            </div>
+
+            <div class="section">
+                
+                    <div id="site">
+                        <div class="stars five"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://wordvis.com/">WordVis</a>
+                            <br /><span class="description">Visual representation of synonyms</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+                    <div id="site">
+                        <div class="stars two"></div>
+                        
+                        <div class="info">
+                            
+                            <a href="/web/20120831120210/http://www.visualthesaurus.com/">Thinkmap Visual Thesaurus</a>
+                            <br /><span class="description">Visual thesaurus to find important synonyms to find the perfect domain</span></div>
+                        </div>
+                        <div class="clear"></div>
+                
+            </div>
+        </div>
+        
+
+        
+
+        
+
+        
+    
+
+    <p id="share">Share DomainGroovy with your friends</p>
+
+    <div id="like">
+        <table>
+            <tr>
+                <td>
+                    <script type="text/javascript" src="/web/20120831120210js_/http://tweetmeme.com/i/scripts/button.js"></script>
+                </td>
+                <td>
+                    <iframe src="/web/20120831120210if_/http://www.facebook.com/plugins/like.php?href=http%253A%252F%252Fdomaingroovy.com&show_faces=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px;" allowTransparency="true"></iframe>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+<script>window.jQuery||document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"><\/script>');var tag=document.createElement("script"),d=document.getElementsByTagName("script")[0];tag.src="/web/20120831120210/https://www.surveybetter.com/survey/embed/2.js";d.parentNode.insertBefore(tag,d);</script>
+
+
+    </div>
+
+    
+        <div id="footer">
+            <p>&copy; 2012 DomainGroovy.
+               Made by <a href="/web/20120831120210/http://bradjasper.com/">Brad Jasper</a>.
+               <a href="mailto:bjasper@gmail.com">E-mail</a> me or
+               follow me on <a href="/web/20120831120210/http://twitter.com/bradjasper">twitter</a>
+            </p>
+        </div>
+
+        <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "/web/20120831120210/https://ssl." : "/web/20120831120210/http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+            </script>
+            <script type="text/javascript">
+            try {
+            var pageTracker = _gat._getTracker("UA-16165034-1");
+            pageTracker._trackPageview();
+            } catch(err) {}</script>
+
+        <script type="text/javascript">
+        var sc_project=5595919; 
+        var sc_invisible=1; 
+        var sc_partition=63; 
+        var sc_click_stat=1; 
+        var sc_security="6eec4d56"; 
+        </script>
+
+        <script type="text/javascript" src="/web/20120831120210js_/http://www.statcounter.com/counter/counter.js"></script>
+        <noscript><img class="statcounter" src="/web/20120831120210im_/http://c.statcounter.com/5595919/0/6eec4d56/1/" alt="blogger statistics" /></noscript>
+        <script type="text/javascript">document.write(unescape('%3Cscript type="text/javascript" src="'+document.location.protocol+'//dnn506yrbagrg.cloudfront.net/pages/scripts/0002/0407.js"%3E%3C%2Fscript%3E'))</script>
+
+        <script type="text/javascript">
+            var tumblr_button = document.createElement("a");
+            tumblr_button.setAttribute("href", "/web/20120831120210/http://www.tumblr.com/share/link?url=" + encodeURIComponent(tumblr_link_url) + "&name=" + encodeURIComponent(tumblr_link_name) + "&description=" + encodeURIComponent(tumblr_link_description));
+            tumblr_button.setAttribute("title", "Share on Tumblr");
+            tumblr_button.setAttribute("style", "display:inline-block; text-indent:-9999px; overflow:hidden; width:129px; height:20px; background:url('/web/20120831120210/http://platform.tumblr.com/v1/share_3.png') top left no-repeat transparent;");
+            tumblr_button.innerHTML = "Share on Tumblr";
+            document.getElementById("tumblr_button_abc123").appendChild(tumblr_button);
+        </script>
+        <script type="text/javascript" src="/web/20120831120210js_/http://platform.twitter.com/widgets.js"></script>
+         
+
+    
+
+    
+</body>
+</html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 12:02:10 Aug 31, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 0:09:02 Jan 25, 2014.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

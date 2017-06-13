@@ -469,12 +469,12 @@ p {
 }
 
 #creative {
-    border: 1px solid red;
     text-align: center;
-    margin: 25px 0;
+    margin: 25px 0 50px 0;
 }
 
 #creative img {
+    max-width: 100%;
 }
 
 @media only screen and (max-width: 1024px) {

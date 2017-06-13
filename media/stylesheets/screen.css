@@ -323,7 +323,7 @@ p {
 
 .header {
 	font-size: 1.7em;
-	background: transparent url('/web/20120507072409/http://domaingroovy.com/media/images/header-green.png') repeat-x 0 -136px;
+	background: transparent url('http://domaingroovy.com/media/images/header-green.png') repeat-x 0 -136px;
 	height: 68px;
 	text-indent: 7px;
 	line-height: 2em;
@@ -339,21 +339,21 @@ p {
 }
 
 .header div.left {
-	background: transparent url('/web/20120507072409/http://domaingroovy.com/media/images/header-green.png') no-repeat 0 0;
+	background: transparent url('http://domaingroovy.com/media/images/header-green.png') no-repeat 0 0;
 	height: 68px;
 	width: 9px;
 	float: left;
 }
 
 .header div.right {
-	background: transparent url('/web/20120507072409/http://domaingroovy.com/media/images/header-green.png') no-repeat 0 -68px;
+	background: transparent url('http://domaingroovy.com/media/images/header-green.png') no-repeat 0 -68px;
 	height: 68px;
 	width: 282px;
 	float: right;
 }
 
 .alt {
-	background: transparent url('/web/20120507072409/http://domaingroovy.com/media/images/header-blue.png') repeat-x 0 -136px;
+	background: transparent url('http://domaingroovy.com/media/images/header-blue.png') repeat-x 0 -136px;
 }
 
 .alt span {
@@ -361,11 +361,11 @@ p {
 }
 
 .alt div.left {
-	background: transparent url('/web/20120507072409/http://domaingroovy.com/media/images/header-blue.png') no-repeat 0 0;
+	background: transparent url('http://domaingroovy.com/media/images/header-blue.png') no-repeat 0 0;
 }
 
 .alt div.right {
-	background: transparent url('/web/20120507072409/http://domaingroovy.com/media/images/header-blue.png') no-repeat 0 -68px;
+	background: transparent url('http://domaingroovy.com/media/images/header-blue.png') no-repeat 0 -68px;
 }
 
 #id_keyword {

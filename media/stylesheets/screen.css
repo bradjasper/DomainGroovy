@@ -5,7 +5,6 @@ body {
     font-family: Verdana, Tahoma, Sans-Serif;
     font-size: 80%;
 	background: url('/media/images/background.png') repeat-x 0 0;
-    min-width: 560px;
 }
 
 #clear {
@@ -25,6 +24,10 @@ body {
 
 #header a {
     float: left;
+}
+
+#header img {
+    max-width: 100%;
 }
 
 #slogan {
@@ -90,67 +93,33 @@ body {
 }
 
 .category_header {
-	font-size: 1.7em;
-	background: transparent url('/media/images/header-green.png') repeat-x 0 -136px;
-	height: 68px;
-	text-indent: 7px;
-	line-height: 2em;
+    padding: 5px 10px;
+    background-color: #f1fed6;
+    border-top: 2px solid #dbecb4;
+    border-bottom: 2px solid #dbecb4;
+}
+
+.category_header.alt {
+    background-color: #e3f4fc;
+    border-top: 2px solid #d2e3eb;
+    border-bottom: 2px solid #d2e3eb;
+}
+
+.category_header h1, .category_header, h2 {
+    font-size: 21px;
+    line-height: 30px;
 }
 
 .category_header span {
-	font-size: 0.6em;
-	color: #636c50;
-	line-height: 0.5em;
-	padding-left: 7px;
+    font-size: 13px;
+    line-height: 16px;
     display: block;
-    white-space: nowrap;
-}
-
-.category_header div.left {
-	background: transparent url('/media/images/header-green.png') no-repeat 0 0;
-	height: 68px;
-	width: 9px;
-	float: left;
-}
-
-.category_header div.right {
-	background: transparent url('/media/images/header-green.png') no-repeat 0 -68px;
-	height: 68px;
-	width: 282px;
-	float: right;
-}
-
-.header_alt {
-	font-size: 1.7em;
-	background: transparent url('/media/images/header-blue.png') repeat-x 0 -136px;
-	height: 68px;
-	text-indent: 7px;
-	line-height: 2em;
-}
-
-.header_alt span {
-	font-size: 0.6em;
-	color: #437f9f;
-	line-height: 0.5em;
-	padding-left: 7px;
+    padding: 5px 0;
+    color: #666;
 }
 
 #categories {
     padding: 10px 0 30px;
-}
-
-.header_alt div.left {
-	background: transparent url('/media/images/header-blue.png') no-repeat 0 0;
-	height: 68px;
-	width: 9px;
-	float: left;
-}
-
-.header_alt div.right {
-	background: transparent url('/media/images/header-blue.png') no-repeat 0 -68px;
-	height: 68px;
-	width: 282px;
-	float: right;
 }
 
 .section { padding: 20px; }
@@ -334,37 +303,6 @@ p {
 	line-height: 0.5em;
 	padding-left: 7px;
     display: block;
-    white-space: nowrap;
-}
-
-.header div.left {
-	background: transparent url('http://domaingroovy.com/media/images/header-green.png') no-repeat 0 0;
-	height: 68px;
-	width: 9px;
-	float: left;
-}
-
-.header div.right {
-	background: transparent url('http://domaingroovy.com/media/images/header-green.png') no-repeat 0 -68px;
-	height: 68px;
-	width: 282px;
-	float: right;
-}
-
-.alt {
-	background: transparent url('http://domaingroovy.com/media/images/header-blue.png') repeat-x 0 -136px;
-}
-
-.alt span {
-	color: #437f9f;
-}
-
-.alt div.left {
-	background: transparent url('http://domaingroovy.com/media/images/header-blue.png') no-repeat 0 0;
-}
-
-.alt div.right {
-	background: transparent url('http://domaingroovy.com/media/images/header-blue.png') no-repeat 0 -68px;
 }
 
 #id_keyword {
@@ -408,7 +346,6 @@ p {
 #search_options td {
     width: 50%;
     padding: 10px 0;
-    white-space: nowrap;
 }
 
 #search_options th {
@@ -419,7 +356,6 @@ p {
 #search_options .label {
     font-weight: bold;
     font-size: 120%;
-    white-space: nowrap;
 }
 
 #available_domains {
@@ -530,4 +466,25 @@ p {
 
 #sponsored_results .sponsor {
   font-weight: bold;
+}
+
+#creative {
+    border: 1px solid red;
+    text-align: center;
+    margin: 25px 0;
+}
+
+#creative img {
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        margin: 2px;
+    }
 }

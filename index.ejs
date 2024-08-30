@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Domain Name Search Tools</title>
+  <meta name="description" content="A collection of the best domain name search tools to help you find the perfect domain name for your next project.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <h1>Domain Name Search Tools</h1>
+      <h2>Find the perfect domain name</h2>
+    </div>
+    <div id="content">
+      <p id="intro">Looking for the perfect domain name? Here's a collection of the best domain name search tools to help you find an available domain name for your next big idea.</p>
+      <div id="categories">
+        <ul id="cats">
+          <% categories.forEach(function(category) { %>
+            <li>
+              <a href="#<%= category.id %>"><%= category.name %></a>
+            </li>
+          <% }); %>
+        </ul>
+      </div>
+      <% categories.forEach(function(category, index) { %>
+        <a name="<%= category.id %>"></a>
+        <div class="category" id="<%= category.id %>">
+          <div class="category_header <%= index % 2 !== 0 ? 'alt' : '' %>">
+            <h2><%= category.name %></h2>
+            <span><%= category.description %></span>
+          </div>
+          <div class="section">
+            <% category.sites.forEach(function(site) { %>
+              <div id="site">
+                <div class="stars <%= ['one', 'two', 'three', 'four', 'five'][site.rating - 1] %>"></div>
+                <div class="info">
+                  <a href="<%= site.url %>"><%= site.name %></a>
+                  <br /><span class="description"><%= site.description %></span>
+                </div>
+              </div>
+              <div class="clear"></div>
+            <% }); %>
+          </div>
+        </div>
+      <% }); %>
+    </div>
+    <div id="footer">
+      <p>Copyright © 2023 Domain Name Search Tools</p>
+    </div>
+  </div>
+</body>
+</html>

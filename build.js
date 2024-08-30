@@ -9,7 +9,7 @@ const template = fs.readFileSync('index.ejs', 'utf-8');
 const categoriesWithSites = data.categories.map(category => {
   return {
     ...category,
-    sites: data.websites.filter(website => website.category === category.id)
+    sites: data.websites.filter(website => website.category.includes(category.id))
   };
 });
 

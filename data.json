@@ -44,6 +44,31 @@
         "id": "other",
         "name": "Other",
         "description": "Other tools and resources for finding domain names (brainstorming, synonyms, etc..)"
+      },
+      {
+        "id": "news-trends",
+        "name": "News & Trends",
+        "description": "Websites providing news, analysis, and trends related to the domain industry"
+      },
+      {
+        "id": "monitoring-alerts",
+        "name": "Domain Monitoring & Alerts",
+        "description": "Tools for tracking specific domains or getting alerts for newly available domains"
+      },
+      {
+        "id": "domain-brokers",
+        "name": "Domain Brokers",
+        "description": "Services that help buyers and sellers negotiate high-value domain transactions"
+      },
+      {
+        "id": "domain-parking",
+        "name": "Domain Parking",
+        "description": "Services that allow domain owners to monetize their unused domains"
+      },
+      {
+        "id": "portfolio-management",
+        "name": "Domain Portfolio Management",
+        "description": "Tools for managing large portfolios of domains"
       }
     ],
     "websites": [
@@ -97,20 +122,6 @@
         "stars": 5
       },
       {
-        "url": "https://www.namemesh.com/",
-        "name": "NameMesh",
-        "description": "A simple and powerful tool for finding domains using over 20+ generators.",
-        "category": ["generate-it"],
-        "stars": 5
-      },
-      {
-        "url": "https://www.namefresh.com/",
-        "name": "NameFresh",
-        "description": "A free domain name generator tool that uses a special algorithm to find unique domains that are available to be registered.",
-        "category": ["generate-it"],
-        "stars": 5
-      },
-      {
         "url": "http://www.catelus.com/",
         "name": "Catelus",
         "description": "Translate your keyword into more than 30 languages and check for their \".com\" availability.",
@@ -118,53 +129,11 @@
         "stars": 4
       },
       {
-        "url": "http://shobia.com/namebird",
-        "name": "NameBird",
-        "description": "Namebird is a startup name maker and new word generator that makes naming your website, startup or product easy and fun.",
-        "category": ["generate-it"],
-        "stars": 4
-      },
-      {
-        "url": "http://jabberwordy.com/",
-        "name": "JabberWordy",
-        "description": "Show the .com, .net or .org availability for 10 randomly generated domain names",
-        "category": ["generate-it"],
-        "stars": 3
-      },
-      {
-        "url": "http://www.dotcomroulette.com/",
-        "name": "Dot Com Roulette",
-        "description": "Enter a few keywords to receive a list of related available domain names.",
-        "category": ["generate-it"],
-        "stars": 3
-      },
-      {
-        "url": "http://domain-generator.us/",
-        "name": "Domain-Generator.us",
-        "description": "Search dozens of popular domain extensions using synonyms related to your keywords",
-        "category": ["generate-it"],
-        "stars": 2
-      },
-      {
-        "url": "http://www.surf7.net/services/value-added-services/free-web-tools/web-20-name-generator/",
-        "name": "Surf7",
-        "description": "Generate a Web 2.0 Name like 56desks.com or nula.com and check for availability",
-        "category": ["brand-name-generators", "generate-it"],
-        "stars": 2
-      },
-      {
         "url": "http://www.company-name-generator.com/",
         "name": "Company Name Generator",
         "description": "Check domain availability for random company names",
         "category": ["generate-it"],
         "stars": 2
-      },
-      {
-        "url": "http://www.domainnametool.com/",
-        "name": "Domain Name Tool",
-        "description": "Search for meaningful domain names using synonyms related to a keyword",
-        "category": ["generate-it"],
-        "stars": 1
       },
       {
         "url": "http://www.leandomainsearch.com/",
@@ -181,51 +150,9 @@
         "stars": 5
       },
       {
-        "url": "http://impossibility.org/",
-        "name": "Impossibility",
-        "description": "Generate available domain using your keyword plus adjectives, nouns, verbs and more ",
-        "category": ["keyword-list"],
-        "stars": 5
-      },
-      {
-        "url": "http://domain-o-matic.com/",
-        "name": "Domain-O-Matic",
-        "description": "Tool to find available domain names based on pre-selected keyword lists and keywords you specify.",
-        "category": ["keyword-list"],
-        "stars": 5
-      },
-      {
-        "url": "http://agiledomainsearch.com/",
-        "name": "Agile Domain Search",
-        "description": "Search great domain names for your website --- in seconds",
-        "category": ["keyword-list"],
-        "stars": 4
-      },
-      {
         "url": "http://nameboy.com/",
         "name": "Nameboy",
         "description": "Search for available domain names with a primary and secondary keyword using keyword lists and synonyms",
-        "category": ["keyword-list"],
-        "stars": 4
-      },
-      {
-        "url": "http://www.quedom.com/",
-        "name": "Quedom",
-        "description": "Generate available domain names from dozens of translations",
-        "category": ["keyword-list"],
-        "stars": 4
-      },
-      {
-        "url": "http://www.domainsbot.com/",
-        "name": "DomainsBot",
-        "description": "Look for domain names with using your keyword and other synonyms",
-        "category": ["keyword-list"],
-        "stars": 4
-      },
-      {
-        "url": "http://www.domainfellow.com/",
-        "name": "Domain Fellow",
-        "description": "Check for available domain names with your keyword by searching popular keyword list by category",
         "category": ["keyword-list"],
         "stars": 4
       },
@@ -248,7 +175,7 @@
         "name": "Dot-o-mator",
         "description": "Combine different keywords lists using popular common words to find available domain names",
         "category": ["keyword-list"],
-        "stars": 1
+        "stars": 2
       },
       {
         "url": "https://www.domcop.com",
@@ -279,34 +206,6 @@
         "stars": 5
       },
       {
-        "url": "http://savespell.com/browse/available",
-        "name": "SaveSpell",
-        "description": "Search or browse available and expired domain names. Also filter by language and extension",
-        "category": ["available-expired"],
-        "stars": 4
-      },
-      {
-        "url": "http://www.1search.org/",
-        "name": "1 Search",
-        "description": "Daily expire domain lists, sorted by words and length",
-        "category": ["available-expired"],
-        "stars": 4
-      },
-      {
-        "url": "http://expiring-domainnames.com/",
-        "name": "Expiring Domain Names",
-        "description": "Search and filter expired domain names by length and more",
-        "category": ["available-expired"],
-        "stars": 4
-      },
-      {
-        "url": "http://domainpeel.com/",
-        "name": "DomainPeel",
-        "description": "DomainPeel is your place for spam free expired domains. These domains would be great for anyone looking to boost their own site or even starting their very own Private Blog Network.",
-        "category": ["available-expired"],
-        "stars": 3
-      },
-      {
         "url": "http://hotnamelist.com/",
         "name": "HotNameList",
         "description": "Search and browse thousands of available .com domain names based on popular topical and common words",
@@ -321,18 +220,11 @@
         "stars": 3
       },
       {
-        "url": "http://availabledomainnames.com/category/available-domain-names/",
-        "name": "Available Domain Names",
-        "description": "Blog showcasing thousands of popular available domain names",
-        "category": ["available-expired"],
-        "stars": 2
-      },
-      {
         "url": "http://justdropped.com/",
         "name": "JustDropped",
         "description": "Search recently expired domain names by keyword and length. Requires free registration",
         "category": ["available-expired"],
-        "stars": 1
+        "stars": 2
       },
       {
         "url": "http://domaintyper.com/",
@@ -344,16 +236,9 @@
       {
         "url": "http://domai.nr/",
         "name": "Domainr",
-        "description": "Domainr helps you explore domains with unique endings like blo.gs, chi.mp and del.icio.us",
+        "description": "Now part of Google Domains, Domainr helps you explore domains with unique endings like blo.gs, chi.mp and del.icio.us",
         "category": ["type-it"],
         "stars": 5
-      },
-      {
-        "url": "https://domize.com/",
-        "name": "Domize",
-        "description": "Quickly search for available .com, .net or .org domain names as you type",
-        "category": ["type-it"],
-        "stars": 4
       },
       {
         "url": "http://www.eurodns.com/",
@@ -412,20 +297,6 @@
         "stars": 2
       },
       {
-        "url": "http://www.domaintools.com/bulk-check/",
-        "name": "DomainTools",
-        "description": "Bulk domain search with most popular extensions",
-        "category": ["type-it"],
-        "stars": 2
-      },
-      {
-        "url": "http://www.thedomainsearch.com/",
-        "name": "The Domain Search",
-        "description": "Quickly search 10 different TLDs for availability (including .com .net .org .mobi .info .in .name .biz .uk and .uk)",
-        "category": ["type-it"],
-        "stars": 2
-      },
-      {
         "url": "http://www.brandbucket.com/",
         "name": "BrandBucket",
         "description": "Business names and brandable domain names for sale.",
@@ -447,13 +318,6 @@
         "stars": 5
       },
       {
-        "url": "http://www.companynamez.com/",
-        "name": "CompanyNamez.com",
-        "description": "The place where you can find perfect domain name for website, company, product or app.",
-        "category": ["auction-paid"],
-        "stars": 5
-      },
-      {
         "url": "http://sedo.com/",
         "name": "Sedo",
         "description": "One of the oldest and most popular domain name marketplaces",
@@ -466,13 +330,6 @@
         "description": "Search lots of quality domain names for sale by domain sellers",
         "category": ["auction-paid"],
         "stars": 5
-      },
-      {
-        "url": "http://www.excitemental.com/",
-        "name": "Excitemental",
-        "description": "Excitemental is a brandable domain name marketplace.",
-        "category": ["auction-paid"],
-        "stars": 4
       },
       {
         "url": "http://novanym.com/",
@@ -514,14 +371,14 @@
         "name": "eBay",
         "description": "Search eBay for live domain auctions",
         "category": ["auction-paid"],
-        "stars": 1
+        "stars": 3
       },
       {
         "url": "http://www.pickydomains.com/",
         "name": "PickyDomains",
         "description": "Pay $50 for somebody else to find you a good domain name based on specifications you set",
         "category": ["auction-paid"],
-        "stars": 1
+        "stars": 2
       },
       {
         "url": "http://www.namepros.com/",
@@ -580,6 +437,13 @@
         "stars": 2
       },
       {
+        "url": "https://thinkmachine.com/",
+        "name": "Think Machine",
+        "description": "Visually research and brainstorm names with an AI assistant",
+        "category": ["other"],
+        "stars": 5
+      },
+      {
         "url": "http://wordvis.com/",
         "name": "WordVis",
         "description": "Visual representation of synonyms",
@@ -592,6 +456,174 @@
         "description": "Visual thesaurus to find important synonyms to find the perfect domain",
         "category": ["other"],
         "stars": 2
+      },
+      {
+        "url": "https://www.squadhelp.com/",
+        "name": "Squadhelp",
+        "description": "A naming platform that combines AI-powered name generation with human creativity.",
+        "category": ["generate-it", "brand-name-generators"],
+        "stars": 4
+      },
+      {
+        "url": "https://namelix.com/",
+        "name": "Namelix",
+        "description": "An AI-powered business name generator that creates short, brandable names.",
+        "category": ["generate-it", "brand-name-generators"],
+        "stars": 4
+      },
+      {
+        "url": "https://www.domain.com/",
+        "name": "Domain.com",
+        "description": "A popular domain registrar with a name spinner tool.",
+        "category": ["type-it", "generate-it"],
+        "stars": 3
+      },
+      {
+        "url": "https://www.hover.com/",
+        "name": "Hover",
+        "description": "A domain registrar known for its clean interface and focus on domains and email.",
+        "category": ["type-it"],
+        "stars": 3
+      },
+      {
+        "url": "https://www.gandi.net/",
+        "name": "Gandi.net",
+        "description": "A domain registrar with a wide range of TLDs and a strong focus on privacy.",
+        "category": ["type-it"],
+        "stars": 3
+      },
+      {
+        "url": "https://www.shopify.com/tools/business-name-generator",
+        "name": "Shopify Business Name Generator",
+        "description": "A free tool that generates business names and checks domain availability.",
+        "category": ["brand-name-generators"],
+        "stars": 3
+      },
+      {
+        "url": "https://namestation.com/",
+        "name": "Namestation",
+        "description": "A domain name generator with advanced features like combining words and using prefixes/suffixes.",
+        "category": ["generate-it"],
+        "stars": 4
+      },
+      {
+        "url": "https://dan.com/",
+        "name": "DAN.COM",
+        "description": "Domain Aftermarket Network - a popular domain marketplace and escrow service.",
+        "category": ["auction-paid"],
+        "stars": 5
+      },
+      {
+        "url": "https://namebio.com/",
+        "name": "NameBio",
+        "description": "A comprehensive domain name sales history database for research purposes.",
+        "category": ["other"],
+        "stars": 4
+      },
+      {
+        "url": "https://www.epik.com/",
+        "name": "Epik",
+        "description": "A domain registrar and marketplace known for its domain management services.",
+        "category": ["type-it", "auction-paid"],
+        "stars": 4
+      },
+      {
+        "url": "https://park.io/",
+        "name": "Park.io",
+        "description": "Specializes in catching and auctioning expired domain names for newer TLDs like .io, .ly, etc.",
+        "category": ["available-expired"],
+        "stars": 4
+      },
+      {
+        "url": "https://uniregistry.com/",
+        "name": "Uniregistry",
+        "description": "A domain registrar and marketplace offering a wide range of services.",
+        "category": ["type-it", "auction-paid"],
+        "stars": 4
+      },
+      {
+        "url": "https://porkbun.com/",
+        "name": "Porkbun",
+        "description": "A domain registrar known for competitive pricing on newer TLDs.",
+        "category": ["type-it"],
+        "stars": 3
+      },
+      {
+        "url": "https://www.estibot.com/",
+        "name": "Estibot",
+        "description": "A domain appraisal and valuation tool for estimating domain worth.",
+        "category": ["other"],
+        "stars": 4
+      },
+      {
+        "url": "https://www.domainiq.com/",
+        "name": "DomainIQ",
+        "description": "A domain research and whois history tool for comprehensive domain information.",
+        "category": ["other"],
+        "stars": 4
+      },
+      {
+        "url": "https://domainnamewire.com/",
+        "name": "Domain Name Wire",
+        "description": "Domain name news, analysis, and opinion",
+        "category": ["news-trends"],
+        "stars": 4
+      },
+      {
+        "url": "https://domainincite.com/",
+        "name": "Domain Incite",
+        "description": "Breaking news and analysis about the domain name industry",
+        "category": ["news-trends"],
+        "stars": 4
+      },
+      {
+        "url": "https://domaininvesting.com/",
+        "name": "Domain Investing",
+        "description": "Domain name industry news and information for domain investors",
+        "category": ["news-trends"],
+        "stars": 4
+      },
+      {
+        "url": "https://www.domaintools.com/",
+        "name": "DomainTools",
+        "description": "Domain name research, monitoring, and threat intelligence",
+        "category": ["monitoring-alerts", "other"],
+        "stars": 5
+      },
+      {
+        "url": "https://mediaoptions.com/",
+        "name": "MediaOptions",
+        "description": "Premium domain name brokerage service",
+        "category": ["domain-brokers"],
+        "stars": 5
+      },
+      {
+        "url": "https://guta.com/",
+        "name": "Guta",
+        "description": "Domain name acquisition and brokerage services",
+        "category": ["domain-brokers"],
+        "stars": 4
+      },
+      {
+        "url": "https://www.parkingcrew.com/",
+        "name": "ParkingCrew",
+        "description": "Domain parking and monetization platform",
+        "category": ["domain-parking"],
+        "stars": 4
+      },
+      {
+        "url": "https://www.domainpower.com/",
+        "name": "DomainPower",
+        "description": "Domain portfolio management and optimization tool",
+        "category": ["portfolio-management"],
+        "stars": 4
+      },
+      {
+        "url": "https://www.domainnamesales.com/",
+        "name": "DomainNameSales",
+        "description": "Domain name sales and portfolio management platform",
+        "category": ["portfolio-management", "auction-paid"],
+        "stars": 4
       }
     ]
 }

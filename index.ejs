@@ -3,52 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Domain Name Search Tools</title>
+  <title>Domain Name Search Tools — Domain Groovy</title>
   <meta name="description" content="A collection of the best domain name search tools to help you find the perfect domain name for your next project.">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div id="container">
-    <div id="header">
-      <h1>Domain Name Search Tools</h1>
-      <h2>Find the perfect domain name</h2>
-    </div>
-    <div id="content">
-      <p id="intro">Looking for the perfect domain name? Here's a collection of the best domain name search tools to help you find an available domain name for your next big idea.</p>
-      <div id="categories">
-        <ul id="cats">
-          <% categories.forEach(function(category) { %>
-            <li>
-              <a href="#<%= category.id %>"><%= category.name %></a>
+  <link rel="stylesheet" href="/styles.css">
+ </head>
+<body class="bg-gray-100 font-sans text-sm max-w-6xl mx-auto bg-repeat-x" style="background: url('/media/images/background.png') repeat-x;">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <header class="pt-8 pb-2">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-center">
+         <div>
+        <a href="https://domaingroovy.com/" class="inline-block" aria-label="DomainGroovy Home">
+          <img src="/media/images/logo.png" alt="DomainGroovy Logo" class="max-w-full h-auto">
+        </a>
+         <h1 class="text-2xl font-bold text-gray-800 mb-2">Domain Name Search Tools</h1>
+         </div>
+      </div>
+    </header>
+    <main>
+      <p class="text-xl mt-2 mb-6 leading-relaxed text-gray-700 text-center max-w-3xl mx-auto">Find your perfect domain. Curated tools, organized and rated.</p>
+      <nav class="mb-8 max-w-5xl mx-auto">
+        <ul class="flex flex-wrap justify-center">
+          <% categories.forEach(function(category, index) { %>
+            <li class="mx-2 my-3">
+              <a href="#<%= category.id %>" 
+                 class="px-4 py-2 text-lg font-bold text-white rounded-full shadow-md transition-all duration-300 ease-in-out transform hover:scale-110 hover:rotate-3" 
+                 style="background: linear-gradient(45deg, <%= ['#FF6B6B', '#4ECDC4', '#45B7D1', '#FFA07A', '#98D8C8'][index % 5] %>, <%= ['#FF8E53', '#2EBFB3', '#318CE7', '#FF7F50', '#66CDAA'][index % 5] %>);">
+                <%= category.name %>
+              </a>
             </li>
           <% }); %>
         </ul>
-      </div>
+      </nav>
       <% categories.forEach(function(category, index) { %>
-        <a name="<%= category.id %>"></a>
-        <div class="category" id="<%= category.id %>">
-          <div class="category_header <%= index % 2 !== 0 ? 'alt' : '' %>">
-            <h2><%= category.name %></h2>
-            <span><%= category.description %></span>
+        <section id="<%= category.id %>" class="mb-8 my-16">
+          <div class="px-6 py-4 rounded-lg shadow-md transition-all duration-300 ease-in-out transform"
+               style="background: linear-gradient(45deg, <%= ['#FF6B6B', '#4ECDC4', '#45B7D1', '#FFA07A', '#98D8C8'][index % 5] %>, <%= ['#FF8E53', '#2EBFB3', '#318CE7', '#FF7F50', '#66CDAA'][index % 5] %>);">
+            <h2 class="text-2xl font-bold text-white mb-2"><%= category.name %></h2>
+            <span class="text-sm text-white opacity-80"><%= category.description %></span>
           </div>
-          <div class="section">
-            <% category.sites.forEach(function(site) { %>
-              <div id="site">
-                <div class="stars <%= ['one', 'two', 'three', 'four', 'five'][site.rating - 1] %>"></div>
-                <div class="info">
-                  <a href="<%= site.url %>"><%= site.name %></a>
-                  <br /><span class="description"><%= site.description %></span>
+          <div class="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <% category.sites.forEach(function(site, siteIndex) { %>
+              <a href="<%= site.url %>" class="flex flex-col bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
+                <div class="h-48 bg-gray-200">
+                  <img src="https://shots.cac.app/screenshot?url=<%= site.url %>" alt="<%= site.name %>" class="w-full h-full object-cover">
                 </div>
-              </div>
-              <div class="clear"></div>
+                <div class="p-4">
+                  <div class="flex mb-2">
+                    <% for (let i = 0; i < site.stars; i++) { %>
+                      <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    <% } %>
+                    <% for (let i = site.stars; i < 5; i++) { %>
+                      <svg class="w-5 h-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    <% } %>
+                  </div>
+                  <h3 class="text-lg font-semibold transition-all duration-300 ease-in-out transform hover:translate-x-1 flex items-center">
+                    <img src="https://www.google.com/s2/favicons?domain=<%= site.url %>" alt="<%= site.name %> favicon" class="w-4 h-4 mr-2">
+                    <%= site.name %>
+                  </h3>
+                  <p class="text-sm text-gray-600 mt-1"><%= site.description %></p>
+                </div>
+              </a>
             <% }); %>
           </div>
-        </div>
+        </section>
       <% }); %>
-    </div>
-    <div id="footer">
-      <p>Copyright © 2023 Domain Name Search Tools</p>
-    </div>
+    </main>
+    <footer class="mt-12 text-center text-gray-600 pb-2">
+      <p>© 2024 Domain Groovy <br /><br />Made by <a class="underline" href="https://bradjasper.com">Brad Jasper</a>, see my other tools to <a class="underline" href="https://heyfocus.com">block distractions</a> and create <a class="underline" href="https://thinkmachine.com">3d mind maps</a>.</p>
+    </footer>
   </div>
+  <script>
+   var script = document.createElement('script');
+   script.defer = true;
+   script.src = "https://s.cac.app/js/script.outbound-links.js";
+   script.dataset.domain = "domaingroovy.com";
+
+   document.getElementsByTagName('head')[0].appendChild(script);
+</script>
 </body>
 </html>

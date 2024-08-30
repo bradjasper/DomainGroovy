@@ -122,13 +122,6 @@
         "stars": 5
       },
       {
-        "url": "http://www.catelus.com/",
-        "name": "Catelus",
-        "description": "Translate your keyword into more than 30 languages and check for their \".com\" availability.",
-        "category": ["generate-it"],
-        "stars": 4
-      },
-      {
         "url": "http://www.company-name-generator.com/",
         "name": "Company Name Generator",
         "description": "Check domain availability for random company names",
@@ -244,13 +237,6 @@
         "url": "http://www.eurodns.com/",
         "name": "EuroDNS",
         "description": "Search hundreds of popular European domain name extensions like .eu, .de and .it",
-        "category": ["type-it"],
-        "stars": 4
-      },
-      {
-        "url": "http://www.domjax.com/",
-        "name": "DomJax",
-        "description": "Search for availability of major domain name extensions like .com, .net and .org with quick access to SEO tools like Google PageRank and pages indexed",
         "category": ["type-it"],
         "stars": 4
       },
@@ -407,13 +393,6 @@
         "description": "Webmaster community with large marketplace, including domain name buying and selling",
         "category": ["forums"],
         "stars": 3
-      },
-      {
-        "url": "http://www.webmaster-talk.com/marketplace/viewcategory.php?id=7",
-        "name": "Webmaster Talk",
-        "description": "Webmaster community with active domain name auctions",
-        "category": ["forums"],
-        "stars": 2
       },
       {
         "url": "http://namechk.com/",
@@ -596,13 +575,6 @@
         "description": "Premium domain name brokerage service",
         "category": ["domain-brokers"],
         "stars": 5
-      },
-      {
-        "url": "https://guta.com/",
-        "name": "Guta",
-        "description": "Domain name acquisition and brokerage services",
-        "category": ["domain-brokers"],
-        "stars": 4
       },
       {
         "url": "https://www.parkingcrew.com/",

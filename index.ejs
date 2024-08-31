@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Domain Name Search Tools — Domain Groovy</title>
   <meta name="description" content="A collection of the best domain name search tools to help you find the perfect domain name for your next project.">
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/styles.css?cb=1">
  </head>
 <body>
   <div class="site-container">
@@ -35,10 +35,10 @@
         </ul>
       </nav>
       <% categories.forEach(function(category, index) { %>
-        <section id="<%= category.id %>" class="mb-8 my-16">
+        <section id="<%= category.id %>" class="mt-12 mb-32">
           <div class="category-header"
                style="background: linear-gradient(45deg, <%= ['#FF6B6B', '#4ECDC4', '#45B7D1', '#FFA07A', '#98D8C8'][index % 5] %>, <%= ['#FF8E53', '#2EBFB3', '#318CE7', '#FF7F50', '#66CDAA'][index % 5] %>);">
-            <h2 class="text-xl sm:text-2xl font-bold text-white mb-2 flex items-center">
+            <h2 class="text-xl sm:text-2xl font-bold text-white flex items-center">
               <span class="mr-2 w-6 h-6"><%- category.icon %></span>
               <%= category.name %>
             </h2>

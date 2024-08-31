@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    @apply font-sans text-base sm:text-sm max-w-6xl mx-auto bg-repeat-x;
+    @apply text-stone-400;
+    background: #0c0a09 url('/media/images/background.png') repeat;
+}
+
 @layer components {
   .site-container {
     @apply container mx-auto px-4 sm:px-6 lg:px-8;
@@ -12,19 +18,19 @@
   }
 
   .site-title {
-    @apply text-6xl font-extrabold tracking-tight;
+    @apply text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight;
   }
 
   .site-subtitle {
-    @apply text-2xl font-semibold text-gray-500;
+    @apply text-xl sm:text-2xl font-semibold text-stone-300;
   }
 
   .category-link {
-    @apply px-4 py-2 text-lg font-bold text-white rounded-full shadow-md transition-all duration-300 ease-in-out transform hover:scale-110 hover:rotate-3;
+    @apply px-3 py-1 sm:px-4 sm:py-2 text-base sm:text-lg font-bold text-white rounded-full shadow-md transition-all duration-300 ease-in-out transform hover:scale-110 hover:rotate-3;
   }
 
   .category-header {
-    @apply px-6 py-4 rounded-lg shadow-md transition-all duration-300 ease-in-out transform;
+    @apply px-4 py-3 sm:px-6 sm:py-4 rounded-lg shadow-md transition-all duration-300 ease-in-out transform;
   }
 
   .site-card {
@@ -32,14 +38,14 @@
   }
 
   .site-card-image {
-    @apply h-48 bg-gray-200;
+    @apply h-36 sm:h-48 bg-stone-200;
   }
 
   .site-card-content {
-    @apply p-4;
+    @apply p-3 sm:p-4;
   }
 
   .site-card-title {
-    @apply text-lg font-semibold transition-all duration-300 ease-in-out transform hover:translate-x-1 flex items-center;
+    @apply text-base sm:text-lg font-semibold transition-all duration-300 ease-in-out transform hover:translate-x-1 flex items-center;
   }
 }

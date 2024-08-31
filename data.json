@@ -2,37 +2,37 @@
     "categories": [
       {
         "id": "best-of",
-        "name": "Best Of",
+        "name": "Best Domain Tools",
         "description": "The best tools from each category to find the perfect domain name"
       },
       {
         "id": "generate-it",
-        "name": "Generate It",
+        "name": "Generate Domains",
         "description": "Generate a domain name through synonyms, random words or some other mechanism"
       },
       {
         "id": "keyword-list",
-        "name": "Keyword List",
+        "name": "Keyword Domains",
         "description": "Create domains from root word and keyword lists (prefixes, common words, web 2.0, etc...)"
       },
       {
         "id": "available-expired",
-        "name": "Available & Expired",
+        "name": "Available & Expired Domains",
         "description": "Search available, expiring soon or expired domain names"
       },
       {
         "id": "type-it",
-        "name": "Type It",
+        "name": "Type Domains",
         "description": "Manually type your domain name and search multiple extensions at once"
       },
       {
         "id": "auction-paid",
-        "name": "Auction & Paid",
+        "name": "Auction & Paid Domains",
         "description": "Find registered domain names that are listed for sale at a fixed price or auction"
       },
       {
         "id": "forums",
-        "name": "Forums",
+        "name": "Domain Forums",
         "description": "Domain name forums where you can buy and sell domain names"
       },
       {
@@ -41,34 +41,14 @@
         "description": "Generate a brand name for your business (most without availability check)"
       },
       {
-        "id": "other",
-        "name": "Other",
-        "description": "Other tools and resources for finding domain names (brainstorming, synonyms, etc..)"
-      },
-      {
         "id": "news-trends",
-        "name": "News & Trends",
+        "name": "Domain News & Trends",
         "description": "Websites providing news, analysis, and trends related to the domain industry"
       },
       {
-        "id": "monitoring-alerts",
-        "name": "Domain Monitoring & Alerts",
-        "description": "Tools for tracking specific domains or getting alerts for newly available domains"
-      },
-      {
-        "id": "domain-brokers",
-        "name": "Domain Brokers",
-        "description": "Services that help buyers and sellers negotiate high-value domain transactions"
-      },
-      {
-        "id": "domain-parking",
-        "name": "Domain Parking",
-        "description": "Services that allow domain owners to monetize their unused domains"
-      },
-      {
-        "id": "portfolio-management",
-        "name": "Domain Portfolio Management",
-        "description": "Tools for managing large portfolios of domains"
+        "id": "other",
+        "name": "Other",
+        "description": "Other tools and resources for finding domain names (brainstorming, synonyms, etc..)"
       }
     ],
     "websites": [
@@ -566,35 +546,35 @@
         "url": "https://www.domaintools.com/",
         "name": "DomainTools",
         "description": "Domain name research, monitoring, and threat intelligence",
-        "category": ["monitoring-alerts", "other"],
+        "category": ["other"],
         "stars": 5
       },
       {
         "url": "https://mediaoptions.com/",
         "name": "MediaOptions",
         "description": "Premium domain name brokerage service",
-        "category": ["domain-brokers"],
+        "category": ["other"],
         "stars": 5
       },
       {
         "url": "https://www.parkingcrew.com/",
         "name": "ParkingCrew",
         "description": "Domain parking and monetization platform",
-        "category": ["domain-parking"],
+        "category": ["other"],
         "stars": 4
       },
       {
         "url": "https://www.domainpower.com/",
         "name": "DomainPower",
         "description": "Domain portfolio management and optimization tool",
-        "category": ["portfolio-management"],
+        "category": ["other"],
         "stars": 4
       },
       {
         "url": "https://www.domainnamesales.com/",
         "name": "DomainNameSales",
         "description": "Domain name sales and portfolio management platform",
-        "category": ["portfolio-management", "auction-paid"],
+        "category": ["other", "auction-paid"],
         "stars": 4
       }
     ]

@@ -2,6 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    background: url('/media/images/background.png') repeat-x;
+@layer components {
+  .site-container {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .site-header {
+    @apply pt-8 pb-2;
+  }
+
+  .site-title {
+    @apply text-6xl font-extrabold tracking-tight;
+  }
+
+  .site-subtitle {
+    @apply text-2xl font-semibold text-gray-500;
+  }
+
+  .category-link {
+    @apply px-4 py-2 text-lg font-bold text-white rounded-full shadow-md transition-all duration-300 ease-in-out transform hover:scale-110 hover:rotate-3;
+  }
+
+  .category-header {
+    @apply px-6 py-4 rounded-lg shadow-md transition-all duration-300 ease-in-out transform;
+  }
+
+  .site-card {
+    @apply flex flex-col bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg;
+  }
+
+  .site-card-image {
+    @apply h-48 bg-gray-200;
+  }
+
+  .site-card-content {
+    @apply p-4;
+  }
+
+  .site-card-title {
+    @apply text-lg font-semibold transition-all duration-300 ease-in-out transform hover:translate-x-1 flex items-center;
+  }
 }

@@ -7,26 +7,26 @@
   <meta name="description" content="A collection of the best domain name search tools to help you find the perfect domain name for your next project.">
   <link rel="stylesheet" href="/styles.css">
  </head>
-<body class="bg-gray-100 font-sans text-sm max-w-6xl mx-auto bg-repeat-x" style="background: url('/media/images/background.png') repeat-x;">
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <header class="pt-8 pb-2">
-      <div class="flex flex-col md:flex-row md:items-center md:justify-center">
-         <div>
-        <a href="https://domaingroovy.com/" class="inline-block" aria-label="DomainGroovy Home">
-          <img src="/media/images/logo.png" alt="DomainGroovy Logo" class="max-w-full h-auto">
+<body class="bg-gray-100 font-sans text-sm max-w-6xl mx-auto bg-repeat-x" style="background: url('/media/images/background.png') repeat;">
+  <div class="site-container">
+    <header class="site-header">
+      <div class="flex flex-col items-center justify-center text-center">
+        <a href="https://domaingroovy.com/" class="inline-block mb-2" aria-label="DomainGroovy Home">
+          <h1 class="site-title">
+            <span class="text-gray-800">Domain</span><span class="text-gray-600">Groovy</span>
+          </h1>
         </a>
-         <h1 class="text-2xl font-bold text-gray-800 mb-2">Domain Name Search Tools</h1>
-         </div>
+        <h2 class="site-subtitle">Find Your Perfect Domain</h2>
       </div>
     </header>
     <main>
-      <p class="text-xl mt-2 mb-6 leading-relaxed text-gray-700 text-center max-w-3xl mx-auto">Find your perfect domain. Curated tools, organized and rated.</p>
+      <p class="text-xl mt-2 mb-6 leading-relaxed text-gray-700 text-center max-w-3xl mx-auto">Dozens of domain name tools curated, organized and rated.</p>
       <nav class="mb-8 max-w-5xl mx-auto">
         <ul class="flex flex-wrap justify-center">
           <% categories.forEach(function(category, index) { %>
             <li class="mx-2 my-3">
               <a href="#<%= category.id %>" 
-                 class="px-4 py-2 text-lg font-bold text-white rounded-full shadow-md transition-all duration-300 ease-in-out transform hover:scale-110 hover:rotate-3" 
+                 class="category-link"
                  style="background: linear-gradient(45deg, <%= ['#FF6B6B', '#4ECDC4', '#45B7D1', '#FFA07A', '#98D8C8'][index % 5] %>, <%= ['#FF8E53', '#2EBFB3', '#318CE7', '#FF7F50', '#66CDAA'][index % 5] %>);">
                 <%= category.name %>
               </a>
@@ -36,18 +36,18 @@
       </nav>
       <% categories.forEach(function(category, index) { %>
         <section id="<%= category.id %>" class="mb-8 my-16">
-          <div class="px-6 py-4 rounded-lg shadow-md transition-all duration-300 ease-in-out transform"
+          <div class="category-header"
                style="background: linear-gradient(45deg, <%= ['#FF6B6B', '#4ECDC4', '#45B7D1', '#FFA07A', '#98D8C8'][index % 5] %>, <%= ['#FF8E53', '#2EBFB3', '#318CE7', '#FF7F50', '#66CDAA'][index % 5] %>);">
             <h2 class="text-2xl font-bold text-white mb-2"><%= category.name %></h2>
             <span class="text-sm text-white opacity-80"><%= category.description %></span>
           </div>
           <div class="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <% category.sites.forEach(function(site, siteIndex) { %>
-              <a href="<%= site.url %>" class="flex flex-col bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
-                <div class="h-48 bg-gray-200">
+              <a href="<%= site.url %>" class="site-card">
+                <div class="site-card-image">
                   <img src="https://shots.cac.app/screenshot?url=<%= site.url %>" alt="<%= site.name %>" class="w-full h-full object-cover">
                 </div>
-                <div class="p-4">
+                <div class="site-card-content">
                   <div class="flex mb-2">
                     <% for (let i = 0; i < site.stars; i++) { %>
                       <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -60,7 +60,7 @@
                       </svg>
                     <% } %>
                   </div>
-                  <h3 class="text-lg font-semibold transition-all duration-300 ease-in-out transform hover:translate-x-1 flex items-center">
+                  <h3 class="site-card-title">
                     <img src="https://www.google.com/s2/favicons?domain=<%= site.url %>" alt="<%= site.name %> favicon" class="w-4 h-4 mr-2">
                     <%= site.name %>
                   </h3>

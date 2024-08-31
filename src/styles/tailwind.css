@@ -26,7 +26,7 @@ body {
   }
 
   .category-link {
-    @apply px-3 py-1 sm:px-4 sm:py-2 text-base sm:text-lg font-bold text-white rounded-full shadow-md transition-all duration-300 ease-in-out transform hover:scale-110 hover:rotate-3;
+    @apply px-3 py-1 sm:px-4 sm:py-2 text-base sm:text-lg font-bold text-white rounded-full shadow-md transition-all duration-300 ease-in-out transform hover:scale-110 hover:rotate-3 hover:brightness-110 inline-block;
   }
 
   .category-header {
@@ -37,15 +37,31 @@ body {
     @apply flex flex-col bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg;
   }
 
-  .site-card-image {
-    @apply h-36 sm:h-48 bg-stone-200;
-  }
-
   .site-card-content {
-    @apply p-3 sm:p-4;
+    @apply p-3 sm:p-4 flex flex-col;
   }
 
   .site-card-title {
-    @apply text-base sm:text-lg font-semibold transition-all duration-300 ease-in-out transform hover:translate-x-1 flex items-center;
+    @apply text-base sm:text-lg font-semibold flex items-center text-stone-700 w-full;
+  }
+
+  .site-card-title-text {
+    @apply truncate flex-grow mr-2;
+  }
+
+  .site-card-rating {
+    @apply flex-shrink-0 flex items-center gap-0.5;
+
+    svg {
+        @apply w-3 h-3;
+    }
+  }
+}
+
+.site-card-image {
+  @apply h-36 sm:h-48 bg-stone-200 overflow-hidden;
+
+  img {
+    @apply w-full h-full object-cover object-top;
   }
 }

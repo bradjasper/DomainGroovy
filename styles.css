@@ -593,6 +593,7 @@ video {
   }
 }
 .category-link {
+  display: inline-block;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   border-radius: 9999px;
   padding-left: 0.75rem;
@@ -616,6 +617,8 @@ video {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-brightness: brightness(1.1);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 @media (min-width: 640px) {
 
@@ -674,18 +677,9 @@ video {
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-.site-card-image {
-  height: 9rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(231 229 228 / var(--tw-bg-opacity));
-}
-@media (min-width: 640px) {
-
-  .site-card-image {
-    height: 12rem;
-  }
-}
 .site-card-content {
+  display: flex;
+  flex-direction: column;
   padding: 0.75rem;
 }
 @media (min-width: 640px) {
@@ -696,24 +690,40 @@ video {
 }
 .site-card-title {
   display: flex;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  width: 100%;
   align-items: center;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 600;
-  transition-property: all;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.site-card-title:hover {
-  --tw-translate-x: 0.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-text-opacity: 1;
+  color: rgb(68 64 60 / var(--tw-text-opacity));
 }
 @media (min-width: 640px) {
 
   .site-card-title {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+}
+.site-card-title-text {
+  margin-right: 0.5rem;
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.site-card-rating {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 0.125rem;
+
+    svg {
+    height: 0.75rem;
+  }
+
+    svg {
+    width: 0.75rem;
   }
 }
 .fixed {
@@ -765,35 +775,29 @@ video {
 .inline-block {
   display: inline-block;
 }
+.inline {
+  display: inline;
+}
 .flex {
   display: flex;
 }
 .grid {
   display: grid;
 }
-.h-4 {
-  height: 1rem;
+.h-6 {
+  height: 1.5rem;
 }
-.h-5 {
-  height: 1.25rem;
-}
-.h-full {
-  height: 100%;
-}
-.w-4 {
-  width: 1rem;
-}
-.w-5 {
-  width: 1.25rem;
-}
-.w-full {
-  width: 100%;
+.w-6 {
+  width: 1.5rem;
 }
 .max-w-3xl {
   max-width: 48rem;
 }
-.max-w-5xl {
-  max-width: 64rem;
+.max-w-6xl {
+  max-width: 72rem;
+}
+.grow {
+  flex-grow: 1;
 }
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -812,10 +816,6 @@ video {
 }
 .gap-4 {
   gap: 1rem;
-}
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .pb-2 {
   padding-bottom: 0.5rem;
@@ -852,6 +852,10 @@ video {
 .text-stone-400 {
   --tw-text-opacity: 1;
   color: rgb(168 162 158 / var(--tw-text-opacity));
+}
+.text-stone-500 {
+  --tw-text-opacity: 1;
+  color: rgb(120 113 108 / var(--tw-text-opacity));
 }
 .text-stone-600 {
   --tw-text-opacity: 1;
@@ -899,6 +903,41 @@ body {
     background: #0c0a09 url('/media/images/background.png') repeat;
 }
 
+.site-card-image {
+  height: 9rem;
+  overflow: hidden;
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 229 228 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 640px) {
+
+  .site-card-image {
+    height: 12rem;
+  }
+}
+
+.site-card-image {
+
+  img {
+    height: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  img {
+    -o-object-position: top;
+       object-position: top;
+  }
+}
+
 @media (min-width: 640px) {
 
   .sm\:text-2xl {
@@ -926,7 +965,7 @@ body {
 
 @media (min-width: 1024px) {
 
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }

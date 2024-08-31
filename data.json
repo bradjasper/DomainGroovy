@@ -234,7 +234,7 @@
         "url": "http://www.namecheap.com/",
         "name": "Namecheap",
         "description": "Quality domain name registrar without overwhelming checkout process",
-        "category": ["type-it"],
+        "category": ["type-it", "best-of"],
         "stars": 4
       },
       {
@@ -479,7 +479,7 @@
         "url": "https://dan.com/",
         "name": "DAN.COM",
         "description": "Domain Aftermarket Network - a popular domain marketplace and escrow service.",
-        "category": ["auction-paid"],
+        "category": ["auction-paid", "best-of"],
         "stars": 5
       },
       {
